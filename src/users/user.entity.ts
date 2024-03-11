@@ -1,4 +1,4 @@
-import { Column } from 'typeorm'
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
 
 @Entity({name: 'users'}) //Va a nombrar la tabla que creara en mysql.
 export default class User {
