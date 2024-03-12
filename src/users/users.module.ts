@@ -11,5 +11,5 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 })
 export class UsersModule {}
 
-//1:08:25.
+//
 // https://www.youtube.com/watch?v=bvw4V6HQB9o&list=PPSV
