@@ -1,8 +1,7 @@
 import { Module } from '@nestjs/common';
 import { UsersModule } from './users/users.module';
-import { UsersController } from './users/users.controller';
-import UsersService from './users/users.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { SchoolsModule } from './schools/schools.module';
 
 @Module({
   imports: [
@@ -11,12 +10,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       host: 'localhost',
       username: 'root',
       password: '',
-      port: 3300,
+      port: 3306,
       database: 'gulaUsers',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true,
+      synchronize: false,
     })
-    , UsersModule]  
+    , UsersModule, SchoolsModule]  
 })
 
 export class AppModule {}

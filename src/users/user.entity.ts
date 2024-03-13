@@ -6,10 +6,10 @@ export default class User {
     @PrimaryGeneratedColumn() //Registro incremental.
     id: number;
 
-    @Column({unique: true})
+    @Column({unique: true, length: 10})
     username:  string;
 
-    @Column()
+    @Column({length: 10})
     password: string;
 
     @Column({type: 'datetime', default: () => 'CURRENT_TIMESTAMP'}) //Genera el time exacto al generarse.

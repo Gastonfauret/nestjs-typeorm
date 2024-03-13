@@ -5,7 +5,7 @@ import { Repository } from 'typeorm';
 import CreateUserDto from './dto/create-user-dto';
 
 @Injectable()
-export default class UsersService {
+export class UsersService {
     constructor(@InjectRepository(User) private UserRepository: Repository<User>) {}
 
     async createUSer(user: CreateUserDto) {

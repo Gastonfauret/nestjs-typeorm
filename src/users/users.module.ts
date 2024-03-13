@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { UsersController } from './users.controller';
-import UsersService from './users.service';
+import {UsersService} from './users.service';
 import User from './user.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
@@ -10,6 +10,3 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   providers: [UsersService]
 })
 export class UsersModule {}
-
-//
-// https://www.youtube.com/watch?v=bvw4V6HQB9o&list=PPSV
